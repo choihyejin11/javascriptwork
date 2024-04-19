@@ -1,0 +1,67 @@
+
+<!-- javascript
+document : 문서(모든문서의 부모)
+window : 창(모든창의 부모) -->
+
+
+<!-- document type : 문서타입 -->
+<!-- 문서타입의 html형식을 만들겠다고 선언하는것 -->
+<!-- 웹으로 출력하겠다는 뜻 하이퍼(h)텍스트(t)마크업(m)랭귀지(l) -->
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- ctrl+h : 전체검색  -->
+  <!-- ctrl + shift + r :파일검색  -->
+  <!-- head:javascript,css,meta,title 설정 링크 -->
+  <!-- 함수 : method -->
+  <!-- 아귀먼트는 무한으로 올 수 있고 기본으로 올 수 있다  -->
+  <!-- ()있는것은 무조건 동사(움직인다) -->
+  <!-- 변수: 하나의 값만 가진다 var name="김현호" -->
+  <!-- function 메소드이름(아귀먼트agument(인자),)아귀먼트agument(인자)2... -->
+  
+  <script>
+   function Daum(){
+    //val:object 모든 타입을 다 가질수 있다(포함라고 있다)
+    //es6(2019 javascript)
+    //val : 불변변수로 값의 읽기만 허용되는 변수.재할당할 수없다
+    //var : 가변변수로 값의 읽기와 쓰기가 모두 허용되는 변수.값재할당
+
+    //변수: 모든 객체지향언어는 오른쪽에서 왼쪽으로 이동
+    //form 타입이름을 변수로 저장
+   
+    var frm = document.daumfrm;
+    //get: url에 파라미터 값이 붙여서 넘어간다 255넘으면 짤린다
+    frm.method = "get"
+    //post : 내부적으로 파라미터값이 넘어간다(url값이 안보인다)
+    //vcscode live server에서는 지원하지 않는다  
+    frm.method = "post"
+    frm.action = "../ "
+    //모든 파라미터 이름을 다음페이지로 넘긴다 
+    frm.submit();
+  }
+</script>
+
+</head>
+<body>
+  <form name="daumfrm">
+    <!-- parameter name:userid -->
+    userid<input type="text" name="userid" ><br>
+    <!-- password 파라미터는 별표로 출력 -->
+    passwd<input type="password" name="passwd"><br>
+    <!-- 이벤트 처리(버튼을 누르면 어떤 행위가 있다 ) -->
+    <input type="button" value="login">
+  
+
+  </form>
+  <!-- form: form은 body안에 있어야 한다 -->
+  <!-- form 안에 파라미터 이름이 있어야 다음 페이지로 값이 넘어간다 -->
+  
+
+</body>
+</html>

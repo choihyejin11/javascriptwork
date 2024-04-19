@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- table(표): 행(가로 tr)과 열(세로 td)로 구성
+  가로병합 colspan 세로병합 rowspan -->
+  <!-- html 5부터는 table태그를 지원하지 않는다(웹표준) -->
+
+
+  <table border="1" width="300" height="300">
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+
+  </table><br>
+
+  <!-- 이름 나이 주소 -->
+  <table border="1" width="300" height="300">
+    <tr>
+      <td>이름</td>
+      <td>홍길동</td>
+    </tr>
+    <tr>
+      <td>나이</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>주소</td>
+      <td>서울시 송파구</td>
+    </tr>
+  </table><br>
+
+
+  <!-- 3행 3열 -->
+  <table border="1" width="300" height="300">
+    <tr>
+      <td colspan="2">1</td>
+      <!-- <td>2</td> -->
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td colspan="2">5</td>
+      <!-- <td>6</td> -->
+    </tr>
+    <tr>
+      <td colspan="3">7</td>
+      <!-- <td>8</td> -->
+      <!-- <td>9</td> -->
+    </tr>
+  </table> <br>
+  
+  <table border="1" width="300" height="300">
+    <tr>
+      <td rowspan="2">1</td>
+      <td>2</td>
+      <td rowspan="3">3</td>
+    </tr>
+    <tr>
+      <!-- <td>1</td> -->
+      <td>2</td>
+      <!-- <td>3</td> -->
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <!-- <td>3</td> -->
+    </tr>
+  </table><br>
+
+  <table border="1" width="300" height="300">
+    <tr>
+      <p><th colspan="2"rowspan="2">배민비즈회원</p>통합로그인</th>
+      <!-- <th rowspan="2">통합로그인</th> -->
+      <!-- <td></td> -->
+    </tr>
+    <tr>
+      <!-- <th colspan="2">통합로그인</th> -->
+      <!-- <td></td> -->
+    </tr>
+    <tr>
+      <td width="80">아이디</td>
+      <td>입력하세요</td>
+    </tr>
+    <tr>
+      <td width="80">비밀번호</td>
+      <td>입력하세요</td>
+    </tr>    
+    <tr>
+      <th colspan="2">로그인</th>
+      <!-- <td></td> -->     
+    
+    </tr>
+  </table>
+  <input type="checkbox" name:"아이디저장"> 아이디저장
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function CoupangInputLobin() {
+      var frm = document.coupanglogin;
+
+
+      console.log(frm.userid.value);
+      console.log(frm.passwd1.value);
+      console.log(frm.passwd2.value);
+      console.log(frm.name.value);
+      console.log(frm.phone.value);
+
+      window.alert('아이디:' + frm.userid.value + '\n이름:' + frm.name.value + '님이 가입되셨습니다');
+    }   
+  </script>
+
+</head>
+
+<body>
+  <form name="coupanglogin">
+    아이디<input type="text" name="userid" id=""><br>
+    비밀번호<input type="password" name="passwd1" id=""><br>
+    비밀번호확인<input type="password" name="passwd2" id=""><br>
+    이름<input type="text" name="name" id=""><br>
+    휴대폰번호<input type="number" name="phone" id=""><br>
+
+    <input type="button" value="회원가입" onclick="CoupangInputLobin()">
+
+
+
+  </form>
+
+</body>
+
+</html>

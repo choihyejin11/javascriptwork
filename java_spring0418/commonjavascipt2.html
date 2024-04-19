@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var choice = 3;
+
+    switch (choice) {
+      case 1:
+        console.log('1 선택' + choice);
+        break;
+
+      case 2:
+        console.log('2 선택' + choice);
+        break;
+
+      case 3:
+        console.log('3 선택'+ choice);
+        break;
+
+
+      default:
+        break;
+    }
+
+
+
+  </script>
+
+  <script>
+  //for 초기식;조건식;증감식(조건식이 맞으면){괄호실행}
+  for(var i=0;i<=10;i++) {
+    console.log(i);   
+    
+  }
+
+  var sum = 0;
+  //2~11까지 출력하시오.
+  for(var i=2;i<=11;i++){
+    sum=sum+i;
+    console.log(sum);
+  }  
+  //0~13까지 합을 출력하시오.
+  console.log('=============');
+
+  var sum = 0;
+  for(var i=0; i<=13; i++){
+    sum += i; 
+
+  }   
+    console.log(sum); 
+  
+  </script>
+
+  <script>
+  //while(조건){true 괄호실행}
+
+  //1~10 합을 구하시오 
+  var init=0;
+    var sum=0;
+  while (++init<=10) {
+    sum+=init;   
+    
+  }
+  console.log(init);
+
+  
+  </script>
+
+  <script>
+ //0~11까지의 합을 구하시오
+  var init=0; 
+
+   var sum=0;
+
+  while(init<=11){
+   sum+=init;
+   ++init;
+  }
+  console.log(sum);
+
+  </script>
+
+//do 한번만 주고건 실행 조건이 맞으면 실행 
+//1~10까지 출력
+
+<script>
+init=0;
+sum=0;
+
+ do{
+  sum+=init;
+ console.log(init);
+} while(++init <= 11);
+
+console.log(sum);
+</script>
+</body>
+
+</html>

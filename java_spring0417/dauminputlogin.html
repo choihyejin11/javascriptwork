@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function LogIn() {
+      var frm = document.dauminputlogin;
+      frm.method = "get"
+      frm.action = "/java_spring0417/dauminputloginnext.html"
+      frm.submit();
+    }
+  </script>
+</head>
+
+<body>
+  <form name="dauminputlogin">
+    <table border="1" width="300" height="300">
+      <tr>
+        <td>아이디</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="button" value="로그인" onclick="LogIn()"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="button" value="회원가입" onclick="LogIn()"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

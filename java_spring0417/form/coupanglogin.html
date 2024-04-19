@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   
+  <!-- script 선언(클라이언트 언어) -->
+  <!-- node.js veu.js  -->
+  <script>
+    function CoupangLogin(){
+      var frm = document.coupanglogin;
+      frm.method = "get"
+      frm.action = "/java_spring0417/inputloginsucess.html"
+      frm.submit();
+    }
+  </script>
+</head>
+
+<body>
+  <form name="coupanglogin">
+    <!-- 아이비/비번 4행 2열 -->
+    <!-- parameter(파라미터값): 파라미터값은 반드시 form 안에 있어야 한다 -->
+    <table border="1" align="center" width="300" height="300">
+      <tr>
+        <td>아이디</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td align="center"><input type="text" name="" id=""></td>
+      </tr>
+      <tr>
+        <td colspan="2"> <img src="/img/coupang.png" alt="쿠팡"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="button" onclick="CoupangLogin()" value="로그인"></td>
+        <!-- <td><input type="text" name="" id=""></td> -->
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="button" onclick="CoupangLogin()" value="회원가입"></td>
+        <!-- <td><input type="text" name="" id=""></td> -->
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

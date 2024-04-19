@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    //  function Init(){
+    //  window.alert('이름 핸드폰 이메일 입력하세요')
+    //  }
+
+    function Address() {
+      var frm = document.info;
+
+      console.log('이름' + frm.name.value);
+      console.log('핸드폰' + frm.phone.value);
+      console.log('이메일' + frm.email.value);
+
+      window.alert(frm.name.value + "님 안녕하세요");
+      // window.alert('연락처' + frm.phone.value);
+      // window.alert('이메일' + frm.email.value);
+
+    }
+
+  </script>
+
+</head>
+
+
+
+<body>
+  <form name="info">
+    <!-- //이름 핸드폰 이메일 -->
+    이름<input type="text" name="name" id=""><br>
+    핸드폰<input type="text" name="phone" id=""><br>
+    메일<input type="text" name="email" id=""><br>
+
+
+    <input type="button" value="로그인" onclick="Address()">
+
+  </form>
+</body>
+
+</html>

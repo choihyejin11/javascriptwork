@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+   function Login(){
+    //객체지향은 큰데에서 작은데로 간다.
+    // 모든 파일의 부모 documet      
+     var frm = document.exfrm;
+     console.log('userid:'+ frm.userid.value);
+     console.log('password:' + frm.passwd.value);
+     console.log('address:' + frm.add.value);
+   }
+
+
+  </script>
+</head>
+<body>
+  <form name="exfrm">
+   
+    userid <input type="text" name="userid" id=""><br>
+    passwd <input type="password" name="passwd" id="">
+    adress <input type="text" name="add" id="">
+
+    <input type="button" value="login" onclick="Login()">
+
+
+  </form>
+</body>
+</html>
