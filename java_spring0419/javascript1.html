@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 변수는 call by value
+    // '홀따옴표(싱글쿼터) "쌍따옴표(더블쿼터)
+    var name = '홍길동';
+    name = '아무개';
+
+    console.log(name);
+
+    //정수형(decimal) : 연산가능
+
+    var age = 10;
+
+    console.log(age);
+
+    age += 10;
+
+    console.log(age);
+
+
+
+  </script>
+  <script>
+    var init = 0;
+
+    ++init;
+    //  ++변수:변수 만나면 +1
+
+    console.log(init);
+    console.log(++init);
+    console.log(init);
+
+    init++;
+    //변수++ :두번 만나면 +1
+
+    console.log(init);
+  </script>
+
+  <script>
+    var choice = 3;
+    switch (choice) {
+      case 1:
+        console.log('1');
+        break;
+
+      case 2:
+        console.log('2');
+        break;
+
+      case 3:
+        console.log('3');
+        break;
+
+      default:
+        break;
+    }
+
+  </script>
+</body>
+
+</html>
