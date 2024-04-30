@@ -174,3 +174,5 @@ console.log(For1());
 // do {
 //   console.log(init);
 // } while (++init <= 11);
+
+
